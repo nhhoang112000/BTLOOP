@@ -1,0 +1,73 @@
+package person.Seller;
+
+import Item.SportEquipment.*;
+import com.sun.xml.internal.ws.wsdl.writer.document.http.Address;
+import person.Customer.OnlineCustomer;
+import person.Person.Account;
+import person.Person.Name;
+import person.Person.Phone;
+
+public class Shipper extends Seller {
+
+	private SportEquipment shippingEquip;
+	private String typeOfVehicle;
+
+	public Shipper() {
+		// TODO - implement Shipper.Shipper
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param shippingEquip
+	 * @param typeOfVehicle
+	 */
+	public Shipper(Name name, Address address, Phone phone, Account account, String email, String sex, float age, String sellerID, String position,SportEquipment shippingEquip, String typeOfVehicle) {
+		// TODO - implement Shipper.Shipper
+		super(name, address, phone, account, email, sex, age, sellerID, position);
+		this.shippingEquip=shippingEquip;
+		this.typeOfVehicle=typeOfVehicle;
+		throw new UnsupportedOperationException();
+	}
+
+	public SportEquipment getShippingEquip() {
+		return this.shippingEquip;
+	}
+
+	/**
+	 * 
+	 * @param shippingEquip
+	 */
+	public void setShippingEquip(SportEquipment shippingEquip) {
+		this.shippingEquip = shippingEquip;
+	}
+
+	public String getTypeOfVehicle() {
+		return this.typeOfVehicle;
+	}
+
+	/**
+	 * 
+	 * @param typeOfVehicle
+	 */
+	public void setTypeOfVehicle(String typeOfVehicle) {
+		this.typeOfVehicle = typeOfVehicle;
+	}
+
+	/**
+	 * 
+	 * @param address
+	 */
+	public void moveToAddress(Address address) {
+		// TODO - implement Shipper.moveToAddress
+		throw new UnsupportedOperationException();
+	}
+
+
+	public double getPayment(OnlineCustomer onlineCustomer) {
+		// TODO - implement Shipper.getPayment
+		return onlineCustomer.getBill().getTotalPayment();
+		//throw new UnsupportedOperationException();
+	}
+
+}
