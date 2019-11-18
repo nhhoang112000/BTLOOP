@@ -1,0 +1,64 @@
+package person.Customer;
+
+import com.sun.xml.internal.ws.wsdl.writer.document.http.Address;
+import person.Person.*;
+import Item.SportEquipment.*;
+
+public class Customer extends Person {
+
+	private String customerID;
+	private String type;
+
+	public Customer() {
+		// TODO - implement Customer.Customer
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param customerID
+	 * @param type
+	 */
+	public Customer(Name name, Address address, Phone phone, Account account, String email, String sex, float age,String customerID, String type) {
+		// TODO - implement Customer.Customer
+		super(name, address, phone, account, email, sex, age);
+		this.customerID=customerID;
+		this.type=type;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getCustomerID() {
+		return this.customerID;
+	}
+
+	/**
+	 * 
+	 * @param customerID
+	 */
+	public void setCustomerID(String customerID) {
+		this.customerID = customerID;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+
+	/**
+	 * 
+	 * @param type
+	 */
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	/**
+	 * 
+	 * @param sportEquipment
+	 */
+	public void checkEquip(SportEquipment sportEquipment) {
+		// TODO - implement Customer.checkEquip
+		System.out.println("thong tin san pham: \n"+sportEquipment.getEquipDetail()+"\n" );
+		throw new UnsupportedOperationException();
+	}
+
+}
