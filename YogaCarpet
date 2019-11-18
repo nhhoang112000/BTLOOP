@@ -1,0 +1,54 @@
+package Item.GymTools;
+
+import Item.SportEquipment.Imagine;
+import Item.SportEquipment.Producer;
+import Item.SportEquipment.SellStore;
+
+public class YogaCarpet extends GymTools {
+
+	private double length;
+	private double width;
+
+	public YogaCarpet() {
+		// TODO - implement YogaCarpet.YogaCarpet
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param length
+	 * @param width
+	 */
+	public YogaCarpet(String equipName, double price, Producer producer, Imagine imagine, SellStore sellStore, String ID,double amountEquip, String muscularGroup, String level,double length, double width) {
+		// TODO - implement YogaCarpet.YogaCarpet
+		super(equipName, price, producer, imagine, sellStore, ID,amountEquip, muscularGroup, level);
+		this.length=length;
+		this.width=width;
+		throw new UnsupportedOperationException();
+	}
+
+	public double getLength() {
+		return this.length;
+	}
+
+	/**
+	 * 
+	 * @param length
+	 */
+	public void setLength(double length) {
+		this.length = length;
+	}
+
+	public double getWidth() {
+		return this.width;
+	}
+
+	/**
+	 * 
+	 * @param width
+	 */
+	public void setWidth(double width) {
+		this.width = width;
+	}
+
+}
