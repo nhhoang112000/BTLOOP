@@ -1,0 +1,50 @@
+package person.Person;
+
+public class Name {
+
+	private String surname;
+	private String lastname;
+
+	public Name() {
+		// TODO - implement Name.Name
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param surname
+	 * @param lastname
+	 */
+	public Name(String surname, String lastname) {
+		// TODO - implement Name.Name
+		this.surname=surname;
+		this.lastname=lastname;
+
+		throw new UnsupportedOperationException();
+	}
+
+	public String getSurname() {
+		return this.surname;
+	}
+
+	/**
+	 * 
+	 * @param surname
+	 */
+	public void setSurname(String surname) {
+		this.surname = surname;
+	}
+
+	/**
+	 * 
+	 * @param lastname
+	 */
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+
+	public String getLastname() {
+		return this.lastname;
+	}
+
+}
