@@ -1,0 +1,41 @@
+package Item.GymTools;
+
+import Item.SportEquipment.Imagine;
+import Item.SportEquipment.Producer;
+import Item.SportEquipment.SellStore;
+
+public class Treadmill extends GymTools {
+
+	private String levelOfSpeed;
+
+	public Treadmill() {
+		// TODO - implement Treadmill.Treadmill
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param levelOfSpeed
+	 */
+	public Treadmill(String equipName, double price, Producer producer, Imagine imagine, SellStore sellStore, String ID,double amountEquip, String muscularGroup, String level,String levelOfSpeed) {
+		// TODO - implement Treadmill.Treadmill
+		super(equipName, price, producer, imagine, sellStore, ID,amountEquip, muscularGroup, level);
+		this.levelOfSpeed=levelOfSpeed;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getLevelOfSpeed() {
+		return this.levelOfSpeed;
+	}
+
+	/**
+	 * 
+	 * @param levelOfSpeed
+	 */
+	public void setLevelOfString(String levelOfSpeed) {
+		// TODO - implement Treadmill.setLevelOfString
+		this.levelOfSpeed=levelOfSpeed;
+		throw new UnsupportedOperationException();
+	}
+
+}
