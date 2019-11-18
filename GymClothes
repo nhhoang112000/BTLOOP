@@ -1,0 +1,39 @@
+package Item.SportClothes;
+
+import Item.SportEquipment.Imagine;
+import Item.SportEquipment.Producer;
+import Item.SportEquipment.SellStore;
+
+public class GymClothes extends SportClothes {
+
+	private String typeOfGym;
+
+	public GymClothes() {
+		// TODO - implement GymClothes.GymClothes
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param typeOfGym
+	 */
+	public GymClothes(String equipName, double price, Producer producer, Imagine imagine, SellStore sellStore, String ID,double amountEquip, String sex, String material, String size, String color,String typeOfGym) {
+		// TODO - implement GymClothes.GymClothes
+		super(equipName, price, producer, imagine, sellStore, ID,amountEquip, sex, material, size, color);
+		this.typeOfGym=typeOfGym;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getTypeOfGym() {
+		return this.typeOfGym;
+	}
+
+	/**
+	 * 
+	 * @param typeOfGym
+	 */
+	public void setTypeOfGym(String typeOfGym) {
+		this.typeOfGym = typeOfGym;
+	}
+
+}
