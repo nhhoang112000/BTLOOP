@@ -1,0 +1,100 @@
+package Order;
+
+import com.sun.xml.internal.ws.wsdl.writer.document.http.Address;
+import person.Customer.*;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+public class Order {
+
+	private String orderID;
+	private OnlineCustomer customer;
+	private Cart cart;
+	private Date date;
+	private Address address;
+
+	public Order() {
+		// TODO - implement Order.Order
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param orderID
+	 * @param customer
+	 * @param cart
+	 * @param date
+	 * @param address
+	 */
+	public Order(String orderID, OnlineCustomer customer, Cart cart, Date date, Address address) {
+		// TODO - implement Order.Order
+		this.orderID=orderID;
+		this.customer=customer;
+		this.cart=cart;
+		this.date=date;
+		this.address=address;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getOrderID() {
+		return this.orderID;
+	}
+
+	/**
+	 * 
+	 * @param orderID
+	 */
+	public void setOrderID(String orderID) {
+		this.orderID = orderID;
+	}
+
+	public OnlineCustomer getCustomer() {
+		return this.customer;
+	}
+
+	/**
+	 * 
+	 * @param customer
+	 */
+	public void setCustomer(OnlineCustomer customer) {
+		this.customer = customer;
+	}
+
+	public Cart getCart() {
+		return this.cart;
+	}
+
+	/**
+	 * 
+	 * @param cart
+	 */
+	public void setCart(Cart cart) {
+		this.cart = cart;
+	}
+
+	public Date getDate() {
+		return this.date;
+	}
+
+	/**
+	 * 
+	 * @param date
+	 */
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public Address getAddress() {
+		return this.address;
+	}
+
+	/**
+	 * 
+	 * @param address
+	 */
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+}
