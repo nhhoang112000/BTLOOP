@@ -1,0 +1,67 @@
+package Item.SportEquipment;
+
+import com.sun.xml.internal.ws.wsdl.writer.document.http.Address;
+import person.Person.*;
+
+public class SellStore {
+
+	private String nameStore;
+	private Address address;
+	private Phone phone;
+
+	public SellStore() {
+		// TODO - implement SellStore.SellStore
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param nameStore
+	 * @param address
+	 * @param phone
+	 */
+	public SellStore(String nameStore, Address address, Phone phone) {
+		// TODO - implement SellStore.SellStore
+		this.nameStore=nameStore;
+		this.address=address;
+		this.phone=phone;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getNameStore() {
+		return this.nameStore;
+	}
+
+	/**
+	 * 
+	 * @param nameStore
+	 */
+	public void setNameStore(String nameStore) {
+		this.nameStore = nameStore;
+	}
+
+	public Address getAddress() {
+		return this.address;
+	}
+
+	/**
+	 * 
+	 * @param address
+	 */
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public Phone getPhone() {
+		return this.phone;
+	}
+
+	/**
+	 * 
+	 * @param phone
+	 */
+	public void setPhone(Phone phone) {
+		this.phone = phone;
+	}
+
+}
