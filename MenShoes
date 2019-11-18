@@ -1,0 +1,17 @@
+package Item.SportShoes;
+
+import Item.SportEquipment.Imagine;
+import Item.SportEquipment.Producer;
+import Item.SportEquipment.SellStore;
+
+public class MenShoes extends SportShoes {
+
+	public MenShoes() {
+		// TODO - implement MenShoes.MenShoes
+		throw new UnsupportedOperationException();
+	}
+	public MenShoes(String equipName, double price, Producer producer, Imagine imagine, SellStore sellStore, String ID,double amountEquip, String trademark, String quality){
+		super(equipName, price, producer, imagine, sellStore, ID,amountEquip, trademark, quality);
+	}
+
+}
