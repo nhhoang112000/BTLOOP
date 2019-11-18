@@ -1,0 +1,54 @@
+package Item.SportClothes;
+
+import Item.SportEquipment.Imagine;
+import Item.SportEquipment.Producer;
+import Item.SportEquipment.SellStore;
+
+public class SoccerClothes extends SportClothes {
+
+	private String teamName;
+	private double number;
+
+	public SoccerClothes() {
+		// TODO - implement SoccerClothes.SoccerClothes
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param teamName
+	 * @param number
+	 */
+	public SoccerClothes(String equipName, double price, Producer producer, Imagine imagine, SellStore sellStore, String ID,double amountEquip, String sex, String material, String size, String color, String teamName, double number) {
+		// TODO - implement SoccerClothes.SoccerClothes
+		super(equipName, price, producer, imagine, sellStore, ID,amountEquip, sex, material, size, color);
+		this.teamName=teamName;
+		this.number=number;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getTeamName() {
+		return this.teamName;
+	}
+
+	/**
+	 * 
+	 * @param teamName
+	 */
+	public void setTeamName(String teamName) {
+		this.teamName = teamName;
+	}
+
+	public double getNumber() {
+		return this.number;
+	}
+
+	/**
+	 * 
+	 * @param number
+	 */
+	public void setNumber(double number) {
+		this.number = number;
+	}
+
+}
