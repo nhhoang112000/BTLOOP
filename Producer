@@ -1,0 +1,67 @@
+package Item.SportEquipment;
+
+import com.sun.xml.internal.ws.wsdl.writer.document.http.Address;
+import person.Person.*;
+
+public class Producer {
+
+	private String nameProducer;
+	private Address address;
+	private Phone phone;
+
+	public Producer() {
+		// TODO - implement Producer.Producer
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param nameProducer
+	 * @param address
+	 * @param phone
+	 */
+	public Producer(String nameProducer, Address address, Phone phone) {
+		// TODO - implement Producer.Producer
+		this.nameProducer=nameProducer;
+		this.address=address;
+		this.phone=phone;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getNameProducer() {
+		return this.nameProducer;
+	}
+
+	/**
+	 * 
+	 * @param nameProducer
+	 */
+	public void setNameProducer(String nameProducer) {
+		this.nameProducer = nameProducer;
+	}
+
+	public Address getAddress() {
+		return this.address;
+	}
+
+	/**
+	 * 
+	 * @param address
+	 */
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public Phone getPhone() {
+		return this.phone;
+	}
+
+	/**
+	 * 
+	 * @param phone
+	 */
+	public void setPhone(Phone phone) {
+		this.phone = phone;
+	}
+
+}
