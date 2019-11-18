@@ -1,0 +1,126 @@
+package person.Person;
+
+import com.sun.xml.internal.ws.wsdl.writer.document.http.Address;
+
+public class Person   {
+
+	private Name name;
+	private Address address;
+	private Phone phone;
+	private Account account;
+	private String email;
+	private String sex;
+	private float age;
+
+	public Person() {
+		// TODO - implement Person.Person
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param name
+	 * @param address
+	 * @param phone
+	 * @param account
+	 * @param email
+	 * @param sex
+	 * @param age
+	 */
+	public Person(Name name, Address address, Phone phone, Account account, String email, String sex, float age) {
+		// TODO - implement Person.Person
+		this.name=name;
+		this.address=address;
+		this.phone=phone;
+		this.account=account;
+		this.email=email;
+		this.age=age;
+
+		throw new UnsupportedOperationException();
+	}
+
+	public Name getName() {
+		return this.name;
+	}
+
+	/**
+	 * 
+	 * @param name
+	 */
+	public void setName(Name name) {
+		this.name = name;
+	}
+
+	public Address getAddress() {
+		return this.address;
+	}
+
+	/**
+	 * 
+	 * @param address
+	 */
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public Phone getPhone() {
+		return this.phone;
+	}
+
+	/**
+	 * 
+	 * @param phone
+	 */
+	public void setPhone(Phone phone) {
+		this.phone = phone;
+	}
+
+	public Account getAccount() {
+		return this.account;
+	}
+
+	/**
+	 * 
+	 * @param account
+	 */
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+
+	public String getEmail() {
+		return this.email;
+	}
+
+	/**
+	 * 
+	 * @param email
+	 */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getSex() {
+		return this.sex;
+	}
+
+	/**
+	 * 
+	 * @param sex
+	 */
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public float getAge() {
+		return this.age;
+	}
+
+	/**
+	 * 
+	 * @param age
+	 */
+	public void setAge(float age) {
+		this.age = age;
+	}
+
+}
