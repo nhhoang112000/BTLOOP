@@ -1,0 +1,61 @@
+package person.Seller;
+
+import Order.*;
+import com.sun.xml.internal.ws.wsdl.writer.document.http.Address;
+import person.Customer.*;
+import person.Person.Account;
+import person.Person.Name;
+import person.Person.Phone;
+
+public class OnlineSeller extends Seller {
+
+	private Order order;
+
+	public OnlineSeller() {
+		// TODO - implement OnlineSeller.OnlineSeller
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param order
+	 */
+	public OnlineSeller(Name name, Address address, Phone phone, Account account, String email, String sex, float age, String sellerID, String position,Order order) {
+		// TODO - implement OnlineSeller.OnlineSeller
+		super(name, address, phone, account, email, sex, age, sellerID, position);
+		this.order=order;
+		throw new UnsupportedOperationException();
+	}
+
+	public Order getOrder() {
+		return this.order;
+	}
+
+	/**
+	 * 
+	 * @param order
+	 */
+	public void setOrder(Order order) {
+		this.order = order;
+	}
+
+	/**
+	 * 
+	 * @param customer
+	 */
+	public void replyToOnlineCustomer(OnlineCustomer customer) {
+		// TODO - implement OnlineSeller.replyToOnlineCustomer
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param order
+	 */
+	public void orderProcessing(Order order) {
+		// TODO - implement OnlineSeller.orderProcessing
+
+		throw new UnsupportedOperationException();
+	}
+
+}
