@@ -1,0 +1,83 @@
+package Order;
+
+import person.Seller.*;
+
+public class Bill {
+
+	private Order order;
+	private OnlineSeller onlineSeller;
+	private double totalPayment;
+
+	public Bill() {
+		// TODO - implement Bill.Bill
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param order
+	 * @param onlineSeller
+	 * @param totalPayment
+	 */
+	public Bill(Order order, OnlineSeller onlineSeller, double totalPayment) {
+		// TODO - implement Bill.Bill
+		this.order=order;
+		this.onlineSeller=onlineSeller;
+		this.totalPayment=totalPayment;
+		throw new UnsupportedOperationException();
+	}
+
+	public Order getOrder() {
+		return this.order;
+	}
+
+	/**
+	 * 
+	 * @param order
+	 */
+	public void setOrder(Order order) {
+		this.order = order;
+	}
+
+	public OnlineSeller getOnlineSeller() {
+		return this.onlineSeller;
+	}
+
+	/**
+	 * 
+	 * @param onlineSeller
+	 */
+	public void setOnlineSeller(OnlineSeller onlineSeller) {
+		this.onlineSeller = onlineSeller;
+	}
+
+	public double getTotalPayment() {
+		return this.totalPayment;
+	}
+
+	/**
+	 * 
+	 * @param totalPayment
+	 */
+	public void setTotalPayment(double totalPayment) {
+		this.totalPayment = totalPayment;
+	}
+
+	/**
+	 * 
+	 * @param order
+	 */
+	public double caculatePayment(Order order) {
+		// TODO - implement Bill.caculatePayment
+
+		double sum=0;
+		for ( int i=0 ; i<order.getCart().getEquipArrayList().size();i++){
+			sum+=order.getCart().getEquipArrayList().get(i).getPrice() *
+					order.getCart().getEquipArrayList().get(i).getAmountEquip();
+		}
+		this.setTotalPayment(sum);
+		//throw new UnsupportedOperationException();
+		return this.getTotalPayment();
+	}
+
+}
