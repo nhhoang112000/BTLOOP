@@ -1,0 +1,52 @@
+package Item.SportShoes;
+
+import Item.SportEquipment.*;
+
+public class SportShoes extends SportEquipment {
+
+	protected String trademark;
+	protected String quality;
+
+	public SportShoes() {
+		// TODO - implement SportShoes.SportShoes
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param trademark
+	 * @param quality
+	 */
+	public SportShoes(String equipName,double price,Producer producer,Imagine imagine,SellStore sellStore,String ID,double amountEquip,String trademark, String quality) {
+		// TODO - implement SportShoes.SportShoes
+		super(equipName, price, producer, imagine, sellStore, ID,amountEquip);
+		this.trademark=trademark;
+		this.quality=quality;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getTrademark() {
+		return this.trademark;
+	}
+
+	/**
+	 * 
+	 * @param trademark
+	 */
+	public void setTrademark(String trademark) {
+		this.trademark = trademark;
+	}
+
+	public String getQuality() {
+		return this.quality;
+	}
+
+	/**
+	 * 
+	 * @param quality
+	 */
+	public void setQuality(String quality) {
+		this.quality = quality;
+	}
+
+}
