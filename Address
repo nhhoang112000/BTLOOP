@@ -1,0 +1,33 @@
+public class Address {
+
+	private String address;
+
+	public Address() {
+		// TODO - implement Address.Address
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param address
+	 */
+	public Address(String address) {
+		// TODO - implement Address.Address
+		this.address=address;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getAddress() {
+		return this.address;
+	}
+
+	/**
+	 * 
+	 * @param address
+	 */
+	public void setAddress(String address) {
+		this.address=address;
+
+	}
+
+}
