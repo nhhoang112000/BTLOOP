@@ -1,0 +1,48 @@
+package Item.Ball;
+
+import Item.SportEquipment.Imagine;
+import Item.SportEquipment.Producer;
+import Item.SportEquipment.SellStore;
+
+public class SoccerBall extends Ball {
+
+	private String typeFootballField;
+
+	public SoccerBall() {
+		// TODO - implement SoccerBall.SoccerBall
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param typeFootballField
+	 */
+	public SoccerBall(String equipName, double price, Producer producer, Imagine imagine, SellStore sellStore, String ID,double amountEquip, String size, String material, String color, String typeFootballField) {
+		// TODO - implement SoccerBall.SoccerBall
+		/*this.nameEquip=equipName;
+		this.price=price;
+		this.producer=producer;
+		this.imagine=imagine;
+		this.sellStore=sellStore;
+		this.ID=ID;
+		this.size=size;
+		this.material=material;
+		this.color=color;*/
+		super(equipName, price, producer, imagine, sellStore, ID,amountEquip, size, material, color);
+		this.typeFootballField=typeFootballField;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getTypeFootballField() {
+		return this.typeFootballField;
+	}
+
+	/**
+	 * 
+	 * @param typeFootballField
+	 */
+	public void setTypeFootballField(String typeFootballField) {
+		this.typeFootballField = typeFootballField;
+	}
+
+}
