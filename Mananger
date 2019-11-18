@@ -1,0 +1,75 @@
+package person.Seller;
+
+import com.sun.xml.internal.ws.wsdl.writer.document.http.Address;
+import person.Person.*;
+
+public class Manager extends Seller {
+
+	private String managementDepartment;
+	private String administration;
+
+	public Manager() {
+		// TODO - implement Manager.Manager
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param managementDepartment
+	 * @param administration
+	 */
+	public Manager(Name name, Address address, Phone phone, Account account, String email, String sex, float age, String sellerID, String position,String managementDepartment, String administration) {
+		// TODO - implement Manager.Manager
+		super(name, address, phone, account, email, sex, age, sellerID, position);
+		this.managementDepartment=managementDepartment;
+		this.administration=administration;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getManagementDepartment() {
+		return this.managementDepartment;
+	}
+
+	/**
+	 * 
+	 * @param managementDepartment
+	 */
+	public void setManagementDepartment(String managementDepartment) {
+		this.managementDepartment = managementDepartment;
+	}
+
+	public String getAdministration() {
+		return this.administration;
+	}
+
+	/**
+	 * 
+	 * @param administration
+	 */
+	public void setAdministration(String administration) {
+		this.administration = administration;
+	}
+
+	/**
+	 * 
+	 * @param buyMoney
+	 * @param sellMoney
+	 * @param salary
+	 */
+	public void moneyManage(double buyMoney, double sellMoney, double salary) {
+		// TODO - implement Manager.moneyManage
+
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param applicant
+	 * @param employee
+	 */
+	public void employeesManage(Person applicant, Person employee) {
+		// TODO - implement Manager.employeesManage
+		throw new UnsupportedOperationException();
+	}
+
+}
