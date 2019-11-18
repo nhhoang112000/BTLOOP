@@ -1,0 +1,118 @@
+package Item.SportEquipment;
+
+public class SportEquipment {
+
+	protected String nameEquip;
+	protected double price;
+	protected Producer producer;
+	protected Imagine imagine;
+	protected SellStore sellStore;
+	protected String ID;
+	protected double amountEquip;
+
+	public SportEquipment(){}
+	public SportEquipment(String equipName,double price,Producer producer,Imagine imagine,SellStore sellStore,String ID,double amountEquip){
+		this.nameEquip=equipName;
+		this.price=price;
+		this.producer=producer;
+		this.imagine=imagine;
+		this.sellStore=sellStore;
+		this.ID=ID;
+		this.amountEquip=amountEquip;
+	}
+
+
+	public String getEquipDetail() {
+		// TODO - implement SportEquipment.getEquipDetail
+		return "Name of sport equipment: "+ this.nameEquip+"\n"
+				+ "Price: "+this.price+"\n"
+				+"Producer: "+this.producer+"\n"
+				+"Imagine: "+this.imagine+"\n"
+				+"SellStore: "+this.sellStore+"\n"
+				+"ID: "+this.ID+"\n"
+				+"amount: " +this.amountEquip+"\n"
+				;
+		//throw new UnsupportedOperationException();
+	}
+
+	public String getNameEquip() {
+		return this.nameEquip;
+	}
+
+	/**
+	 * 
+	 * @param nameEquip
+	 */
+	public void setNameEquip(String nameEquip) {
+		this.nameEquip = nameEquip;
+	}
+
+	public double getPrice() {
+		return this.price;
+	}
+
+	/**
+	 * 
+	 * @param price
+	 */
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public Producer getProducer() {
+		return this.producer;
+	}
+
+	/**
+	 * 
+	 * @param producer
+	 */
+	public void setProducer(Producer producer) {
+		this.producer = producer;
+	}
+
+	public Imagine getImagine() {
+		return this.imagine;
+	}
+
+	/**
+	 * 
+	 * @param imagine
+	 */
+	public void setImagine(Imagine imagine) {
+		this.imagine = imagine;
+	}
+
+	public SellStore getSellStore() {
+		return this.sellStore;
+	}
+
+	/**
+	 * 
+	 * @param sellStore
+	 */
+	public void setSellStore(SellStore sellStore) {
+		this.sellStore = sellStore;
+	}
+
+	public String getID() {
+		// TODO - implement SportEquipment.getID
+		return this.ID;
+		//throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param ID
+	 */
+	public void setID(String ID) {
+		// TODO - implement SportEquipment.setID
+		this.ID=ID;
+		throw new UnsupportedOperationException();
+	}
+	public double getAmountEquip(){return this.amountEquip; }
+
+	public void setAmountEquip(double amountEquip) {
+		this.amountEquip = amountEquip;
+	}
+}
