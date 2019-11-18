@@ -1,0 +1,117 @@
+package Order;
+
+import Item.SportEquipment.SportEquipment;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Cart {
+	public  ArrayList<SportEquipment> equipArrayList=new ArrayList<SportEquipment>();
+
+	public  void setEquipArrayListArrayList(ArrayList<SportEquipment> equipArrayList) {
+		this.equipArrayList=equipArrayList;
+	}
+	public ArrayList<SportEquipment> getEquipArrayList(){
+		return this.equipArrayList;
+	}
+
+
+	private String cartID;
+	private SportEquipment sportEquipment;
+
+
+	public Cart() {
+		// TODO - implement Cart.Cart
+
+		//throw new UnsupportedOperationException();
+	}
+
+
+	public Cart(String cartID, SportEquipment sportEquipment,ArrayList<SportEquipment> equipArrayList)
+	{
+		// TODO - implement Cart.Cart
+		this.cartID=cartID;
+		this.sportEquipment=sportEquipment;
+		this.equipArrayList=equipArrayList;
+
+
+		throw new UnsupportedOperationException();
+	}
+
+	public String getCartID() {
+		return this.cartID;
+	}
+
+	/**
+	 * 
+	 * @param cartID
+	 */
+	public void setCartID(String cartID) {
+		this.cartID = cartID;
+	}
+
+	public SportEquipment getSportEquipment() {
+		return this.sportEquipment;
+	}
+
+	/**
+	 * 
+	 * @param sportEquipment
+	 */
+	public void setSportEquipment(SportEquipment sportEquipment) {
+		this.sportEquipment = sportEquipment;
+	}
+
+
+
+	public void addEquip(SportEquipment sportEquipment,double amountEquip) {
+		// TODO - implement Cart.addEquip
+        sportEquipment.setAmountEquip(amountEquip);
+        this.equipArrayList.add(sportEquipment);
+
+        //throw new UnsupportedOperationException();
+	}
+	public void view(Cart cart){
+		System.out.println("cartID: " + cart.getCartID() +"\n");
+	    for ( int i=0; i<this.equipArrayList.size();i++){
+			System.out.println(cart.getEquipArrayList().get(i).getNameEquip()+" "+cart.getEquipArrayList().get(i).getAmountEquip()+"\n");
+
+		}
+	}
+	/**
+	 * 
+	 * @param
+	 */
+	public void editEquip(String equipName,double newAmountEquip) {
+		// TODO - implement Cart.editEquip
+		for (int i=0; i<this.equipArrayList.size();i++){
+			if (this.equipArrayList.get(i).getNameEquip().equals(equipName)){
+				this.equipArrayList.get(i).setAmountEquip(newAmountEquip);
+			}
+		}
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param
+	 */
+	public void removeEquip(String equipName) {
+		// TODO - implement Cart.removeEquip
+		for( int i=0; i<this.equipArrayList.size();i++){
+			if(this.equipArrayList.get(i).getNameEquip().equals(equipName)){
+				this.equipArrayList.remove(i);
+			}
+		}
+		throw new UnsupportedOperationException();
+	}
+
+	/*public static void main(String[] args){
+		Cart a=new Cart();
+        SportEquipment x=new SportEquipment();
+        x.setNameEquip("ten");
+        a.addEquip(x,2);
+
+		a.view(a);
+	}*/
+}
