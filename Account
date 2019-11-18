@@ -1,0 +1,72 @@
+package person.Person;
+
+public class Account {
+
+	private String loginname;
+	private String password;
+	private String type;
+	private double money;
+	public Account() {
+		// TODO - implement Account.Account
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param loginname
+	 * @param password
+	 * @param type
+	 */
+	public Account(String loginname, String password, String type,double money) {
+		// TODO - implement Account.Account
+		this.loginname=loginname;
+		this.password=password;
+		this.type=type;
+		this.money=money;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getLoginname() {
+		return this.loginname;
+	}
+
+	/**
+	 * 
+	 * @param loginName
+	 */
+	public void setLoginname(String loginName) {
+			this.loginname=loginName;
+	}
+
+	public String getPassword() {
+		return this.password;
+	}
+
+	/**
+	 * 
+	 * @param password
+	 */
+	public void setPassword(String password) {
+		this.password=password;
+	}
+
+	public String getType() {
+		return this.type;
+	}
+
+	/**
+	 * 
+	 * @param type
+	 */
+	public void setType(String type) {
+		this.type=type;
+	}
+
+	public double getMoney() {
+		return money;
+	}
+
+	public void setMoney(double money) {
+		this.money = money;
+	}
+}
