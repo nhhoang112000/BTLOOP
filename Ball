@@ -1,0 +1,74 @@
+package Item.Ball;
+
+import Item.SportEquipment.*;
+
+public class Ball extends SportEquipment {
+
+	protected String size;
+	protected String material;
+	protected String color;
+
+	public Ball() {
+		// TODO - implement Ball.Ball
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param size
+	 * @param material
+	 * @param color
+	 */
+	public Ball(String equipName,double price,Producer producer,Imagine imagine,SellStore sellStore,String ID,double amountEquip,String size, String material, String color) {
+		// TODO - implement Ball.Ball
+		/*this.nameEquip=equipName;
+		this.price=price;
+		this.producer=producer;
+		this.imagine=imagine;
+		this.sellStore=sellStore;
+		this.ID=ID;
+		*/
+		super(equipName, price, producer, imagine, sellStore, ID,amountEquip);
+		this.size=size;
+		this.material=material;
+		this.color=color;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getSize() {
+		return this.size;
+	}
+
+	/**
+	 * 
+	 * @param size
+	 */
+	public void setSize(String size) {
+		this.size = size;
+	}
+
+	public String getMaterial() {
+		return this.material;
+	}
+
+	/**
+	 * 
+	 * @param material
+	 */
+	public void setMaterial(String material) {
+		this.material = material;
+	}
+
+	public String getColor() {
+		return this.color;
+	}
+
+	/**
+	 * 
+	 * @param color
+	 */
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+}
