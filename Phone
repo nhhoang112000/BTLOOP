@@ -1,0 +1,49 @@
+package person.Person;
+
+public class Phone {
+
+	private String phone;
+	private String networkproviders;
+
+	public Phone() {
+		// TODO - implement Phone.Phone
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param phone
+	 * @param networkproviders
+	 */
+	public Phone(String phone, String networkproviders) {
+		// TODO - implement Phone.Phone
+		this.phone=phone;
+		this.networkproviders=networkproviders;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getPhone() {
+		return this.phone;
+	}
+
+	/**
+	 * 
+	 * @param phone
+	 */
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getNetworkproviders() {
+		return this.networkproviders;
+	}
+
+	/**
+	 * 
+	 * @param networkproviders
+	 */
+	public void setNetworkproviders(String networkproviders) {
+		this.networkproviders = networkproviders;
+	}
+
+}
