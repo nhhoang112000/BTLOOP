@@ -1,0 +1,53 @@
+package person.Seller;
+
+import com.sun.xml.internal.ws.wsdl.writer.document.http.Address;
+import person.Person.*;
+
+public class Seller extends Person {
+
+	private String sellerID;
+	private String position;
+
+	public Seller() {
+		// TODO - implement Seller.Seller
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param sellerID
+	 * @param position
+	 */
+	public Seller(Name name, Address address, Phone phone, Account account, String email, String sex, float age,String sellerID, String position) {
+		// TODO - implement Seller.operation
+		super(name, address, phone, account, email, sex, age);
+		this.sellerID=sellerID;
+		this.position=position;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getSellerID() {
+		return this.sellerID;
+	}
+
+	/**
+	 * 
+	 * @param sellerID
+	 */
+	public void setSellerID(String sellerID) {
+		this.sellerID=sellerID;
+	}
+
+	public String getPosition() {
+		return this.position;
+	}
+
+	/**
+	 * 
+	 * @param position
+	 */
+	public void setPosition(String position) {
+		this.position=position;
+	}
+
+}
