@@ -1,0 +1,39 @@
+package Item.GymTools;
+
+import Item.SportEquipment.Imagine;
+import Item.SportEquipment.Producer;
+import Item.SportEquipment.SellStore;
+
+public class WeightLifting extends GymTools {
+
+	private double weight;
+
+	public WeightLifting() {
+		// TODO - implement WeightLifting.WeightLifting
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param weight
+	 */
+	public WeightLifting(String equipName, double price, Producer producer, Imagine imagine, SellStore sellStore, String ID,double amountEquip, String muscularGroup, String level,double weight) {
+		// TODO - implement WeightLifting.WeightLifting
+		super(equipName, price, producer, imagine, sellStore, ID,amountEquip, muscularGroup, level);
+		this.weight=weight;
+		throw new UnsupportedOperationException();
+	}
+
+	public double getWeight() {
+		return this.weight;
+	}
+
+	/**
+	 * 
+	 * @param weight
+	 */
+	public void setWeight(double weight) {
+		this.weight = weight;
+	}
+
+}
