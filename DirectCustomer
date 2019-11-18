@@ -1,0 +1,26 @@
+package person.Customer;
+
+import Order.Bill;
+import Order.Order;
+import com.sun.xml.internal.ws.wsdl.writer.document.http.Address;
+import person.Person.Account;
+import person.Person.Name;
+import person.Person.Phone;
+
+public class DirectCustomer extends Customer {
+
+	public DirectCustomer() {
+		// TODO - implement DirectCustomer.DirectCustomer
+		throw new UnsupportedOperationException();
+	}
+
+	public DirectCustomer(Name name, Address address, Phone phone, Account account, String email, String sex, float age, String customerID, String type){
+		super(name, address, phone, account, email, sex, age, customerID, type);
+	}
+	public double payByMoney(Bill bill) {
+		// TODO - implement DirectCustomer.payByMoney
+		return bill.caculatePayment(bill.getOrder());
+		//throw new UnsupportedOperationException();
+	}
+
+}
