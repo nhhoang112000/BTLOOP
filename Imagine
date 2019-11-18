@@ -1,0 +1,64 @@
+package Item.SportEquipment;
+
+public class Imagine {
+
+	private float width;
+	private float height;
+	private String link;
+
+	public Imagine() {
+		// TODO - implement Imagine.Imagine
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param width
+	 * @param height
+	 * @param link
+	 */
+	public Imagine(float width, float height, String link) {
+		// TODO - implement Imagine.Imagine
+		this.width=width;
+		this.height=height;
+		this.link=link;
+		throw new UnsupportedOperationException();
+	}
+
+	public float getWidth() {
+		return this.width;
+	}
+
+	/**
+	 * 
+	 * @param width
+	 */
+	public void setWidth(float width) {
+		this.width = width;
+	}
+
+	public float getHeight() {
+		return this.height;
+	}
+
+	/**
+	 * 
+	 * @param height
+	 */
+	public void setHeight(float height) {
+		this.height = height;
+	}
+
+	public String getLink() {
+		return this.link;
+	}
+
+	/**
+	 * 
+	 * @param link
+	 */
+	public void setLink(String link) {
+		this.link = link;
+	}
+
+}
