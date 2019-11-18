@@ -1,0 +1,48 @@
+package Item.Ball;
+
+import Item.SportEquipment.Imagine;
+import Item.SportEquipment.Producer;
+import Item.SportEquipment.SellStore;
+
+public class BasketBall extends Ball {
+
+	private String quality;
+
+	public BasketBall() {
+		// TODO - implement BasketBall.BasketBall
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * 
+	 * @param quality
+	 */
+	public BasketBall(String equipName, double price, Producer producer, Imagine imagine, SellStore sellStore, String ID,double amountEquip, String size, String material, String color, String quality) {
+		// TODO - implement BasketBall.BasketBall
+		/*this.nameEquip=equipName;
+		this.price=price;
+		this.producer=producer;
+		this.imagine=imagine;
+		this.sellStore=sellStore;
+		this.ID=ID;
+		this.size=size;
+		this.material=material;
+		this.color=color;*/
+		super(equipName, price, producer, imagine, sellStore, ID,amountEquip, size, material, color);
+		this.quality=quality;
+		throw new UnsupportedOperationException();
+	}
+
+	public String getQuality() {
+		return this.quality;
+	}
+
+	/**
+	 * 
+	 * @param quality
+	 */
+	public void setQuality(String quality) {
+		this.quality = quality;
+	}
+
+}
